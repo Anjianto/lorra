@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .scroll::-webkit-scrollbar {
+    width: 0.3em;
+    height: 1em;
+  }
+
+  /* .scroll::-webkit-scrollbar-track {
+   background: #786CE9;
+ } */
+
+  .scroll::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  .scroll::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+
+  @supports (scrollbar-color: red blue) {
+    .scroll {
+      scrollbar-color: transparent transparent;
+      scrollbar-width: none;
+    }
+  }
+}
